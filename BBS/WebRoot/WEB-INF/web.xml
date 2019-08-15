@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MemberServlet</servlet-name>
+    <servlet-class>com.leebx.servlet.MemberServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DispatchServlet</servlet-name>
+    <servlet-class>com.leebx.servlet.DispatchServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TopicServlet</servlet-name>
+    <servlet-class>com.leebx.servlet.TopicServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PublishServlet</servlet-name>
+    <servlet-class>com.leebx.servlet.PublishServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>HuiFuServlet</servlet-name>
+    <servlet-class>com.leebx.servlet.HuiFuServlet</servlet-class>
+  </servlet>
+
+ 
+
+
+  <filter>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <filter-name>PostServlet</filter-name>
+    <filter-class>com.leebx.servlet.PostServlet</filter-class>
+  </filter>
+
+  <filter>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <filter-name>DetailSevlet</filter-name>
+    <filter-class>com.leebx.servlet.DetailSevlet</filter-class>
+  </filter>
+
+  <filter>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <filter-name>ListServlet</filter-name>
+    <filter-class>com.leebx.servlet.ListServlet</filter-class>
+  </filter>
+
+
+  <filter>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <filter-name>IndexServlet</filter-name>
+    <filter-class>com.leebx.servlet.IndexServlet</filter-class>
+  </filter>
+
+
+  <servlet-mapping>
+    <servlet-name>MemberServlet</servlet-name>
+    <url-pattern>/MemberServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DispatchServlet</servlet-name>
+    <url-pattern>/DispatchServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TopicServlet</servlet-name>
+    <url-pattern>/TopicServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PublishServlet</servlet-name>
+    <url-pattern>/PublishServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>HuiFuServlet</servlet-name>
+    <url-pattern>/HuiFuServlet</url-pattern>
+  </servlet-mapping>
+ 
+  <filter-mapping>
+    <filter-name>PostServlet</filter-name>
+    <url-pattern>/post.jsp</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>DetailSevlet</filter-name>
+    <url-pattern>/detail.jsp</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>ListServlet</filter-name>
+    <url-pattern>/list.jsp</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>IndexServlet</filter-name>
+    <url-pattern>/index.jsp</url-pattern>
+  </filter-mapping>	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
